@@ -18,13 +18,19 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Build and deploy
+      - name: Build project
+        run: |
+          # Tambahkan perintah build Anda di sini, contoh:
+          npm install
+          npm run build
+
+      - name: Deploy to GitHub Pages
         env:
           TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/Adttaama/Project-Shop.git
-          git fetch
-          # Tambahkan perintah build Anda di sini
+          git checkout -b gh-pages
+          cp -r build/* .
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push origin gh-pages
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/Adttaama/Project-Shop.git
+          git push --force origin gh-pages
