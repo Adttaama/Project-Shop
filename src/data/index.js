@@ -15,7 +15,7 @@ import People3 from "../assets/img/testimonial/people-3.jpg";
 export const navLinks = [
   {
     id: 1,
-    path: "",
+    path: "Project-Shop",
     text: "Home",
   },
   {
