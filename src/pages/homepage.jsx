@@ -27,8 +27,10 @@ const homepage = () => {
                 temukan <br /> <span>bakat kreatifmu</span> <br />
                 bersama kami
               </h1>
-              <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorem illo odio quos quasi commodi?</p>
-              <button className="btn btn-info btn-lg rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("/kelas")}>
+              <p className="mb-4">
+                Dapatkan semua <span className="fw-bold">kelas</span> dengan harga terjangakau dengan diskon hingga <span className="fw-bold ">70%</span>
+              </p>
+              <button className="btn btn-info btn-lg fw-bold rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("/kelas")}>
                 lihat kelas
               </button>
               <button className="btn btn-outline-primary btn-lg rounded-1 mb-xs-0 mb-2">lihat promo</button>
@@ -44,7 +46,7 @@ const homepage = () => {
           <Row>
             <Col>
               <h1 className="text-center fw-bold">Kelas terbaru</h1>
-              <p className="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <p className="text-center">Jadilah Ahli di Bidang Anda dengan Harga Terbaik!</p>
             </Col>
           </Row>
           <Row>

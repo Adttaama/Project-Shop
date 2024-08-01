@@ -11,10 +11,9 @@ const testipage = () => {
           <Row>
             <Col>
               <h1 className="fw-bold text-center">Testimonial Page</h1>
-              <p className="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, quis!</p>
             </Col>
           </Row>
-          <Row className="row-cols-lg-3 row-cols-1">
+          <Row className="row-cols-lg-3 row-cols-1 mt-5">
             {testimonial.map((data) => {
               return (
                 <Col key={data.id} className="mb-5 ">
